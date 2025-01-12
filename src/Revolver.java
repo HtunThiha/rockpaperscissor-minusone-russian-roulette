@@ -15,12 +15,10 @@ public class Revolver {
             deathRounds.add(liveRound);
             bulletRounds.remove(selectedRoundIndex);
         }
-        System.out.println("deathRounds: " + deathRounds);
     }
 
     public static boolean spinAndFire() {
         int triggeredRound = 1 + (int) Math.floor(Math.random() * 6);
-        System.out.println("triggeredRound: " + triggeredRound);
         if (deathRounds.contains(triggeredRound)) {
             return true;
         } else {
