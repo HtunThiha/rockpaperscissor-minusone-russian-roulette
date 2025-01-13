@@ -8,11 +8,14 @@ public class RockPaperScissors {
         int result = (p_index - b_index + 3) % 3;
 
         if (result == 0) {
+            System.out.println("Draw.\n\n");
             return "Draw";
         } else if (result == 1) {
-            return "Player Wins";
+            System.out.println("Player wins in RockPaperScissors Minus One!\n\n");
+            return "Player";
         } else {
-            return "Bot Wins";
+            System.out.println("Bot wins in RockPaperScissors Minus One!\n\n");
+            return "Bot";
         }
     }
 }
